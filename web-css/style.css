@@ -1,0 +1,210 @@
+/* RESET DASAR */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. BACKGROUND UTAMA */
+body {
+    background-color: #f4f6f9;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* 2. CONTAINER UTAMA */
+.container {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;        /* ROUNDED 10px */
+    overflow: hidden;           /* Biar header dan footer tidak keluar dari lengkungan container */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Bayangan lebih halus dan luas */
+}
+
+/* 3. HEADER & NAVIGASI */
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+nav {
+    background-color: #2a2a2a;
+    border-bottom: 3px solid #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
+}
+
+/* 4. HERO BANNER */
+.hero {
+    background-color: #fdfbf7;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.hero p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* 5. KONTEN UTAMA */
+.main-content {
+    padding: 40px 30px;
+}
+
+.product-card {
+    border: 1px solid #f0f0f0;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;         /* ROUNDED 10px */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.product-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;        /* ROUNDED 10px */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 1.5;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info h3 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+/* Aksen emas pada bawah judul */
+.product-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #d4af37;
+}
+
+.product-info p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.product-info ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn-order {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;         /* ROUNDED 10px */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.btn-order:hover {
+    background-color: #d4af37;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* 6. FOOTER */
+footer {
+    background-color: #1a1a1a;
+    color: #888888;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}

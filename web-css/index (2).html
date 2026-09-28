@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasywa Tailor - Latihan Box Model Sederhana</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CONTAINER UTAMA DI TENGAH LAYAR -->
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <h1>Nasywa Tailor</h1>
+        <p>Eksklusif & High Fashion Gallery</p>
+      </header>
+
+      <!-- NAVIGASI -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- HERO BANNER -->
+      <div class="hero">
+        <h2>Koleksi Busana Desainer 2026</h2>
+        <p>Sentuhan keanggunan dan keindahan seni berbusana.</p>
+      </div>
+
+      <!-- KONTEN UTAMA -->
+      <main class="main-content">
+        <!-- KARTU PRODUK BAJU DESAINER -->
+        <div class="product-card">
+          <!-- Gambar Baju Desainer -->
+          <div class="product-image">
+            <img
+              src="https://i.pinimg.com/736x/44/6d/f1/446df1160b58fc263a674bcf3b963461.jpg"
+              alt="Gaun Wisuda"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://placehold.co/400x500/1a1a1a/ffffff?text=Gaun+Desainer';
+              "
+            />
+          </div>
+
+          <!-- Deskripsi Singkat -->
+          <div class="product-info">
+            <h3>kebaya wisuda</h3>
+            <p><strong>Desainer:</strong> Nasywa</p>
+            <p><strong>Bahan:</strong> detail bunga 3d & Payet bunga</p>
+            <p><strong>Deskripsi:</strong></p>
+            <p>
+              kebaya wisuda dibuat khusus dengan teknik jahitan presisi untuk
+              menampilkan kesan anggun, mewah, dan percaya diri dalam setiap
+              momen istimewa.
+            </p>
+            <ul>
+              <li>Desain edisi terbatas (Limited Edition)</li>
+              <li>Detail payet buatan tangan (Handmade)</li>
+              <li>Nyaman dan lembut di kulit</li>
+            </ul>
+            <a href="#" class="btn-order">Lihat Detail Karya</a>
+          </div>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; 2026 Nasywa Couture - Latihan Penerapan CSS Box Model</p>
+      </footer>
+    </div>
+  </body>
+</html>
