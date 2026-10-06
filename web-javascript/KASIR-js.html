@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASIR-JS.HTML</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 1. Input nama barang (bisa diganti sesuai keinginan lewat pop-up prompt)
+        let namaBarang = prompt("Masukkan nama barang:", "buku tulis");
+        
+        // 2. Input harga barang
+        let hargaBarang = parseInt(prompt("Masukkan harga barang (contoh: 15000):", "15000"));
+        
+        // 3. Input jumlah beli (qty)
+        let qty = parseInt(prompt("Masukkan jumlah beli (qty):", "4"));
+
+        // Hitung total awal
+        let totalBelanja = hargaBarang * qty;
+        let diskon = 0;
+
+        // 4. Jika pembelian lebih dari 50.000 dapat diskon 10% dari total
+        if (totalBelanja > 50000) {
+            diskon = totalBelanja * 0.10;
+        }
+
+        // Hitung akhir setelah diskon
+        let pembayaran = totalBelanja - diskon;
+
+        // Fungsi bantuan untuk memformat angka dengan titik (misal: 60000 menjadi 60.000)
+        function formatRp(angka) {
+            return angka.toLocaleString('id-ID');
+        }
+
+        // 5. Tampilan Struk Belanja
+        let struk = `
++++++++++++++++++++++++++++++++++
++                               +
++ nama    Harga    qty total    +
++ ${namaBarang.padEnd(8, ' ')}                      +
++         ${formatRp(hargaBarang).padStart(7, ' ')}  ${qty}    ${formatRp(totalBelanja).padStart(8, ' ')}   +
++                               +
++ total belanja   ${formatRp(totalBelanja).padStart(8, ' ')}   +
++ diskon          ${formatRp(diskon).padStart(8, ' ')}   +
++ pembayaran      ${formatRp(pembayaran).padStart(8, ' ')}   +
++                               +
++++++++++++++++++++++++++++++++++
+`;
+
+        document.write("<pre>" + struk + "</pre>");
+    </script>
+</body>
+</html>
